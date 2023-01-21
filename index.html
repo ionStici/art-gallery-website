@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/favicon-32x32.png">
   <title>Art gallery website</title>
 
   <link rel="stylesheet" href="./src/styles/style.css">
@@ -16,13 +16,36 @@
 </head>
 <body>
 
-  <!-- Modern Art Gallery
+    <main class="main">
+        <section class="cta">
 
-  The arts in the collection of the Modern Art Gallery all started 
-  from a spark of inspiration. Will these pieces inspire you? Visit 
-  us and find out.
+            <div class="cta__black"></div>
+            <div class="cta__logo">
+                <p class="h1 h1--white"><span>Modern</span> Art Gallery</p>
+            </div>
+            <div class="cta__img-wrapper">
+                <picture>
+                    <source srcset="./src/assets/mobile/image-hero@2x.jpg" media="(max-width: 767px)">
+                    <source src="./src/assets/tablet/image-hero@2x.jpg" media="(min-width: 768px)">
+                    <source src="./src/assets/desktop/image-hero@2x.jpg" media="(min-width: 1200px)">
 
-  Our location
+                    <img class="cta__img" src="./src/assets/desktop/image-hero@2x.jpg" alt="Painting">
+                </picture>
+            </div>
+
+            <div class="cta__text">
+                <h1 class="h1 h1--locate"><span>Modern</span> Art Gallery</h1>
+                <p class="p">The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these pieces inspire you? Visit us and find out.</p>
+                <a class="btn" href="./location.html">Our location</a>
+            </div>
+
+            <div class="cta__white"></div>
+
+        </section>
+    </main>
+
+
+  <!--
 
   Your day at the gallery
 
