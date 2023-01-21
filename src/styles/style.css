@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button {
+  font: inherit;
+}
+
+:root {
+  --font-shoulders: "Big Shoulders Display", cursive;
+  --font-outfit: "Outfit", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
