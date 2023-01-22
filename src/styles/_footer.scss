@@ -1,0 +1,84 @@
+.footer {
+    background-color: #151515;
+
+    &__section {
+        max-width: 410px;
+        margin: 0 auto;
+        padding: 48px 32px;
+
+        @media only screen and (min-width: 650px) {
+            max-width: 920px;
+            padding: 56px 40px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            padding: 80px 40px;
+            max-width: 1190px;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 38px;
+
+        @media only screen and (min-width: 650px) {
+            margin-bottom: 0;
+            margin-right: 65px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            width: 160px;
+            margin-right: 140px;
+        }
+    }
+
+    &__address {
+        color: #fff;
+        font-family: "Outfit";
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 38px;
+
+        @media only screen and (min-width: 650px) {
+            margin-bottom: 0;
+            width: 281px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            font-size: 18px;
+            line-height: 28px;
+            width: 430px;
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+
+        @media only screen and (min-width: 650px) {
+            margin-left: auto;
+        }
+    }
+
+    li {
+        cursor: pointer;
+    }
+
+    &__icon {
+        transition: fill 0.15s;
+    }
+
+    li:hover &__icon {
+        fill: #d5966c;
+    }
+
+    li:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    svg:hover {
+        fill: red;
+    }
+}
