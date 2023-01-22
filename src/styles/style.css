@@ -100,7 +100,7 @@ body {
   margin: 0 auto;
   margin-bottom: 144px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 650px) {
   .cta {
     max-width: 1200px;
     margin-bottom: 120px;
@@ -147,7 +147,7 @@ body {
 .cta__img-wrapper {
   margin-bottom: 32px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 650px) {
   .cta__img-wrapper {
     grid-column: 1/2;
     margin-bottom: revert;
@@ -166,7 +166,7 @@ body {
 .cta__text {
   padding: 0 16px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 650px) {
   .cta__text {
     padding: 0;
     margin-left: -48px;
@@ -240,7 +240,7 @@ body {
   margin: 0 auto 120px auto;
   padding: 0 16px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 650px) {
   .gallery {
     max-width: 930px;
     padding: 0 40px;
@@ -263,7 +263,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 650px) {
   .gallery__intro {
     margin-bottom: 0;
     display: grid;
@@ -279,7 +279,7 @@ body {
   margin-bottom: 25px;
   order: 1;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 650px) {
   .gallery__intro__img {
     order: revert;
     margin-bottom: 0;
@@ -288,7 +288,7 @@ body {
 .gallery__intro__text-box {
   order: 2;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 650px) {
   .gallery__intro__text-box {
     order: revert;
     width: 76%;
@@ -306,15 +306,21 @@ body {
 .gallery__intro__h2 span {
   display: block;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 650px) {
   .gallery__intro__h2 span {
     display: revert;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 650px) {
   .gallery__intro__h2 {
     width: 210px;
     margin-bottom: 24px;
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .gallery__intro__h2 {
+    font-size: 50px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -332,6 +338,16 @@ body {
   line-height: 28px;
   color: #444444;
 }
+@media only screen and (min-width: 650px) {
+  .gallery__intro__p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .gallery__intro__p {
+    font-size: 18px;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .gallery__intro__p {
     font-size: 22px;
@@ -341,7 +357,7 @@ body {
 .gallery__stool__wrapper {
   margin-bottom: 16px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 650px) {
   .gallery__stool__wrapper {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -350,7 +366,7 @@ body {
 .gallery__stool__img {
   width: 100%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 650px) {
   .gallery__invit {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -363,7 +379,7 @@ body {
   width: 100%;
   margin-bottom: 16px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 650px) {
   .gallery__invit__img {
     margin-bottom: 7px;
   }
@@ -378,13 +394,18 @@ body {
   color: #fff;
   padding: 48px 24px 47px 24px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 650px) {
   .gallery__invit__text-box {
     flex-grow: 1;
-    padding: 85px 28px 85px 29px;
+    padding: 48px 20px 48px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .gallery__invit__text-box {
+    padding: 85px 28px 85px 29px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -400,6 +421,16 @@ body {
   text-transform: uppercase;
   margin-bottom: 24px;
 }
+@media only screen and (min-width: 650px) {
+  .gallery__invit__h2 {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .gallery__invit__h2 {
+    font-size: 50px;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .gallery__invit__h2 {
     font-size: 60px;
@@ -412,6 +443,16 @@ body {
   font-weight: 300;
   font-size: 18px;
   line-height: 28px;
+}
+@media only screen and (min-width: 650px) {
+  .gallery__invit__p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .gallery__invit__p {
+    font-size: 18px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .gallery__invit__p {
