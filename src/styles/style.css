@@ -551,6 +551,7 @@ li:hover .footer__icon {
 
 .main-location {
   position: relative;
+  background-color: #151515;
 }
 
 #map {
@@ -627,6 +628,103 @@ li:hover .footer__icon {
   position: absolute;
   top: 0;
   left: -56px;
+}
+
+.loc {
+  max-width: 378px;
+  margin: 0 auto;
+  padding: 48px 16px 56px 16px;
+  color: #fff;
+}
+@media only screen and (min-width: 650px) {
+  .loc {
+    max-width: 920px;
+    padding: 88px 40px 80px 40px;
+    display: flex;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .loc {
+    max-width: 1110px;
+    padding: 104px 40px 128px 40px;
+  }
+}
+.loc__h1-wrapper {
+  margin-bottom: 48px;
+}
+@media only screen and (min-width: 650px) {
+  .loc__h1-wrapper {
+    width: 223px;
+    margin-right: 68px;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .loc__h1-wrapper {
+    width: 350px;
+    margin-right: 220px;
+  }
+}
+.loc__h1 {
+  font-family: "Big Shoulders Display";
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 650px) {
+  .loc__h1 {
+    font-size: 55px;
+    line-height: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .loc__h1 {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+.loc__text-box {
+  font-family: "Outfit";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+}
+@media only screen and (min-width: 1200px) {
+  .loc__text-box {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+.loc__h2 {
+  font-family: "Big Shoulders Display";
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 32px;
+  color: #d5966c;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 1200px) {
+  .loc__h2 {
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .loc__p {
+    width: 540px;
+  }
+}
+.loc ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 1200px) {
+  .loc ul {
+    margin-bottom: 32px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

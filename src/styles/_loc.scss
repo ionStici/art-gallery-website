@@ -1,0 +1,93 @@
+.loc {
+    max-width: 378px;
+    margin: 0 auto;
+    padding: 48px 16px 56px 16px;
+    color: #fff;
+
+    @media only screen and (min-width: 650px) {
+        max-width: 920px;
+        padding: 88px 40px 80px 40px;
+        display: flex;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        max-width: 1110px;
+        padding: 104px 40px 128px 40px;
+    }
+
+    &__h1-wrapper {
+        margin-bottom: 48px;
+
+        @media only screen and (min-width: 650px) {
+            width: 223px;
+            margin-right: 68px;
+            margin-bottom: 0;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            width: 350px;
+            margin-right: 220px;
+        }
+    }
+
+    &__h1 {
+        font-family: "Big Shoulders Display";
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 45px;
+        text-transform: uppercase;
+
+        @media only screen and (min-width: 650px) {
+            font-size: 55px;
+            line-height: 50px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            font-size: 70px;
+            line-height: 70px;
+        }
+    }
+
+    &__text-box {
+        font-family: "Outfit";
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+
+        @media only screen and (min-width: 1200px) {
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+
+    &__h2 {
+        font-family: "Big Shoulders Display";
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 32px;
+        color: #d5966c;
+        margin-bottom: 20px;
+
+        @media only screen and (min-width: 1200px) {
+            margin-bottom: 24px;
+            font-size: 36px;
+            line-height: 36px;
+        }
+    }
+
+    &__p {
+        @media only screen and (min-width: 1200px) {
+            width: 540px;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin-bottom: 20px;
+
+        @media only screen and (min-width: 1200px) {
+            margin-bottom: 32px;
+        }
+    }
+}
