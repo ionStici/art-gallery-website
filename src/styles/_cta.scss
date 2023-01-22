@@ -1,11 +1,11 @@
 .cta {
     max-width: 500px;
     margin: 0 auto;
-    margin-bottom: 24px;
+    margin-bottom: 144px;
 
     @media only screen and (min-width: 768px) {
         max-width: 1200px;
-        margin-bottom: revert;
+        margin-bottom: 120px;
 
         display: grid;
         grid-template-columns: 0.569fr 0.43fr;
@@ -16,6 +16,7 @@
         max-width: revert;
         grid-template-columns: 1fr 285px 540px 285px 1fr;
         grid-template-rows: 800px;
+        margin-bottom: 180px;
     }
 
     &__black {
