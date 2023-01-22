@@ -1,0 +1,43 @@
+.btn,
+.btn:link,
+.btn:visited {
+    position: relative;
+    padding: 24px 35px 24px 48px;
+
+    text-decoration: none;
+    background-color: #151515;
+    color: #fff;
+    font-family: "Big Shoulders Display";
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.63636px;
+
+    cursor: pointer;
+    transition: color 0.15s, background-color 0.15s;
+
+    &::before {
+        content: url(./../assets/icon-arrow-right.svg);
+        background-color: #d5966c;
+        width: 56px;
+        height: 72px;
+        position: absolute;
+        top: 0;
+        right: -56px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: background-color 0.15s;
+    }
+
+    &:hover {
+        background-color: #d5966c;
+        color: #ffffff;
+
+        &::before {
+            background-color: #151515;
+        }
+    }
+}

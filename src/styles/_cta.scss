@@ -62,12 +62,6 @@
         display: block;
         width: 100%;
         margin: 0 auto;
-
-        // @media only screen and (min-width: 768px) {
-        // }
-
-        // @media only screen and (min-width: 1200px) {
-        // }
     }
 
     &__text {
@@ -96,103 +90,4 @@
             grid-column: 5 / 6;
         }
     }
-}
-
-.h1 {
-    font-family: "Big Shoulders Display";
-    font-weight: 900;
-    font-size: 60px;
-    line-height: 55px;
-    text-transform: uppercase;
-    color: #151515;
-    margin-bottom: 32px;
-
-    span {
-        display: block;
-    }
-
-    @media only screen and (min-width: 768px) {
-        font-size: 70px;
-        line-height: 65px;
-        margin-bottom: 48px;
-    }
-
-    @media only screen and (min-width: 1200px) {
-        font-size: 96px;
-        line-height: 88px;
-    }
-
-    &--white {
-        @media only screen and (min-width: 1200px) {
-            display: block;
-            color: #fff;
-            width: 500px;
-            margin-top: 189px;
-        }
-    }
-
-    &--locate {
-        @media only screen and (min-width: 1200px) {
-            width: 500px;
-            position: absolute;
-            z-index: 2;
-
-            top: -75px;
-            left: -759.9px;
-        }
-    }
-}
-
-.p {
-    font-family: "Outfit";
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 28px;
-    color: #444444;
-    margin-bottom: 56px;
-
-    @media only screen and (min-width: 768px) {
-        font-size: 18px;
-        line-height: 28px;
-        max-width: 340px;
-        margin-bottom: 72px;
-    }
-
-    @media only screen and (min-width: 1200px) {
-        max-width: 350px;
-        font-size: 22px;
-        line-height: 32px;
-        margin-bottom: 88px;
-    }
-}
-
-.btn,
-.btn:link,
-.btn:visited {
-    position: relative;
-    padding: 24px 35px 24px 48px;
-
-    text-decoration: none;
-    background-color: #151515;
-    color: #fff;
-    font-family: "Big Shoulders Display";
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 3.63636px;
-    cursor: pointer;
-}
-
-.btn::before {
-    content: url(./../assets/icon-arrow-right.svg);
-    background: #d5966c;
-    width: 56px;
-    height: 72px;
-    position: absolute;
-    top: 0;
-    right: -56px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }

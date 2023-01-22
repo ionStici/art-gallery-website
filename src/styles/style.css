@@ -27,6 +27,74 @@ body {
   }
 }
 
+.h1 {
+  font-family: "Big Shoulders Display";
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 55px;
+  text-transform: uppercase;
+  color: #151515;
+  margin-bottom: 32px;
+}
+.h1 span {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .h1 {
+    font-size: 70px;
+    line-height: 65px;
+    margin-bottom: 48px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .h1 {
+    font-size: 96px;
+    line-height: 88px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .h1--white {
+    display: block;
+    color: #fff;
+    width: 500px;
+    margin-top: 189px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .h1--locate {
+    width: 500px;
+    position: absolute;
+    z-index: 2;
+    top: -75px;
+    left: -759.9px;
+  }
+}
+
+.p {
+  font-family: "Outfit";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #444444;
+  margin-bottom: 56px;
+}
+@media only screen and (min-width: 768px) {
+  .p {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 340px;
+    margin-bottom: 72px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .p {
+    max-width: 350px;
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 88px;
+  }
+}
+
 .cta {
   max-width: 500px;
   margin: 0 auto;
@@ -123,74 +191,6 @@ body {
   }
 }
 
-.h1 {
-  font-family: "Big Shoulders Display";
-  font-weight: 900;
-  font-size: 60px;
-  line-height: 55px;
-  text-transform: uppercase;
-  color: #151515;
-  margin-bottom: 32px;
-}
-.h1 span {
-  display: block;
-}
-@media only screen and (min-width: 768px) {
-  .h1 {
-    font-size: 70px;
-    line-height: 65px;
-    margin-bottom: 48px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .h1 {
-    font-size: 96px;
-    line-height: 88px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .h1--white {
-    display: block;
-    color: #fff;
-    width: 500px;
-    margin-top: 189px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .h1--locate {
-    width: 500px;
-    position: absolute;
-    z-index: 2;
-    top: -75px;
-    left: -759.9px;
-  }
-}
-
-.p {
-  font-family: "Outfit";
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 28px;
-  color: #444444;
-  margin-bottom: 56px;
-}
-@media only screen and (min-width: 768px) {
-  .p {
-    font-size: 18px;
-    line-height: 28px;
-    max-width: 340px;
-    margin-bottom: 72px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .p {
-    max-width: 350px;
-    font-size: 22px;
-    line-height: 32px;
-    margin-bottom: 88px;
-  }
-}
-
 .btn,
 .btn:link,
 .btn:visited {
@@ -205,11 +205,13 @@ body {
   line-height: 24px;
   letter-spacing: 3.63636px;
   cursor: pointer;
+  transition: color 0.15s, background-color 0.15s;
 }
-
-.btn::before {
+.btn::before,
+.btn:link::before,
+.btn:visited::before {
   content: url(./../assets/icon-arrow-right.svg);
-  background: #d5966c;
+  background-color: #d5966c;
   width: 56px;
   height: 72px;
   position: absolute;
@@ -218,6 +220,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.15s;
+}
+.btn:hover,
+.btn:link:hover,
+.btn:visited:hover {
+  background-color: #d5966c;
+  color: #ffffff;
+}
+.btn:hover::before,
+.btn:link:hover::before,
+.btn:visited:hover::before {
+  background-color: #151515;
 }
 
 /*# sourceMappingURL=style.css.map */
