@@ -469,6 +469,9 @@ body {
 .footer {
   background-color: #151515;
 }
+.footer--loc {
+  background-color: #d5966c;
+}
 .footer__section {
   max-width: 410px;
   margin: 0 auto;
@@ -524,6 +527,9 @@ body {
     width: 430px;
   }
 }
+.footer__address--loc {
+  color: #151515;
+}
 .footer ul {
   list-style: none;
   display: flex;
@@ -539,14 +545,17 @@ body {
 .footer__icon {
   transition: fill 0.15s;
 }
+.footer__icon--loc {
+  fill: #151515;
+}
 li:hover .footer__icon {
   fill: #d5966c;
 }
+li:hover .footer__icon--loc {
+  fill: #fff;
+}
 .footer li:not(:last-child) {
   margin-right: 20px;
-}
-.footer svg:hover {
-  fill: red;
 }
 
 .main-location {
@@ -645,7 +654,7 @@ li:hover .footer__icon {
 }
 @media only screen and (min-width: 1200px) {
   .loc {
-    max-width: 1110px;
+    max-width: 1190px;
     padding: 104px 40px 128px 40px;
   }
 }
